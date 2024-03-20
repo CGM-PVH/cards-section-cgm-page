@@ -1,1 +1,0 @@
-# cards-section-cgm-page
