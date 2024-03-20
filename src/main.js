@@ -1,24 +1,24 @@
-import './styles/global.css'
-import javascriptLogo from '../public/javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './components/Counter/index.js'
+import './styles/global.css';
+import {cards} from "./components/ProgramSectionCards/cards.js";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
+export function main(){
+    return `
+        <div id="iframe-content">
+            <!--      COMPONENT LOAD      -->
+        </div>
 `
+}
 
-setupCounter(document.querySelector('#counter'))
+function loadCSS(path) {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = path;
+    link.id = 'dynamic-css';  // Adicione um id para referenciar a folha de estilo
+    document.head.appendChild(link);
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    document.getElementById('app').innerHTML += main()
+    document.getElementById('iframe-content').innerHTML += cards()
+    loadCSS('./src/components/ProgramSectionCards/cards.css')
+})
