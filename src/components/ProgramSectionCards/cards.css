@@ -61,8 +61,8 @@ p, img {
 p {
     text-align: center;
     padding: 1rem;
-    font-weight: bold;
-    font-size: 2vh;
+    font-weight: bolder;
+    font-size: 2.25vh;
 }
 
 .card-name {
@@ -135,7 +135,7 @@ a {
 }
 
 .logo {
-    height: 12.5vh;
+    height: 6vh;
 }
 
 .card {
