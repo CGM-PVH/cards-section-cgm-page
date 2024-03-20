@@ -14,21 +14,25 @@ export function cards(){
 }
 
 function cardGenerator(cardsData){
+    let cardsListItemHtml = ''
 
-    const cards = cardsData.par
-
-    return `
+    for (let cardsKey in cardsData) {
+        let card = cardsData[cardsKey];
+        cardsListItemHtml += `
          <li>
-            <a href="https://eaud.cgu.gov.br/">
+            <a href=${card.linkURL}>
                 <div class="card" id="card1">
-                    ${hasLogo(cards.logo, cards.title)}
+                    ${hasLogo(card.logo, card.title)}
                     <div class="card-text">
-                        ${cards.description}
+                        ${card.description}
                     </div>
                 </div>
             </a>
         </li>
     `
+    }
+
+    return cardsListItemHtml
 }
 
 function hasLogo(logoData, title){
