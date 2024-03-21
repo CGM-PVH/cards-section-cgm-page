@@ -20,7 +20,7 @@ function cardGenerator(cardsData){
         let card = cardsData[cardsKey];
         cardsListItemHtml += `
          <li>
-            <a href=${card.linkURL}>
+            <a href=${card.linkURL} target="_blank">
                 <div class="card" id="card1">
                     ${hasLogo(card.logo, card.title)}
                     <div class="card-text">

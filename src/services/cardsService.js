@@ -96,7 +96,7 @@ const cardsData = {
             alt:''
         },
         description: 'Processo Administrativo de Responsabilização',
-        linkURL: 'https://transparencia.portovelho.ro.gov.br/PAR'
+        linkURL: 'https://par-table.streamlit.app/'
     },
     "avaliacaoSistemaControleinterno": {
         title: 'AVALIAÇÃO SISTEMA DE CONTROLE INTERNO',
@@ -107,14 +107,14 @@ const cardsData = {
         description: 'Resultados de avaliação do Sistema de Controle Internoaplicados no exercícios de 2021 a 2023',
         linkURL: 'https://graficos-cgm.netlify.app/main'
     },
-    "agenda": {
-        title: 'AGENDA \n Controladores',
+    "IACM": {
+        title: 'IA-CM',
         logo: {
             url:'',
             alt:''
         },
-        description: '',
-        linkURL: '#'
+        description: 'Modelo de Capacidade de Auditoria Interna',
+        linkURL: 'https://cgm.portovelho.ro.gov.br/arquivos/lista/61587/ia-cm'
     },
 }
 
