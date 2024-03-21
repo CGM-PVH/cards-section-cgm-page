@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --card-width: 180px;
+    --card-height: 130px;
+    --conteiner-width: 100vw;
+    --yellow-color: #FFD600;
+    --blue-color: #0071CE;
+    --grid-template: repeat(5, var(--card-width));
+}
+
+@media screen and (max-width: 970px) {
+    :root {
+        --card-width: 22vw; /* Ajustar para telas médias */
+        --grid-template: repeat(4, var(--card-width)); /* 3 colunas para telas médias */
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    :root {
+        --card-width: 25vw; /* Ajustar para telas médias */
+        --grid-template: repeat(3, var(--card-width)); /* 3 colunas para telas médias */
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    :root {
+        --card-width: 40vw; /* Ajustar para telas médias */
+        --grid-template: repeat(2, var(--card-width)); /* 3 colunas para telas médias */
+    }
+
+    .card {
+        min-width: var(--card-width);
+    }
+
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    box-sizing: border-box; /* Added to include padding and borders in the element's total width and height */
+}
+
+a {
+    text-decoration: none;
+}
+
+p, img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: var(--card-width)/4;
+}
+
+p {
+    text-align: center;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 2.25vh;
+}
+
+.card-name {
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.container {
+    max-width: var(--card-width);
+}
+
+#programasEAcoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-sessao {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+#carouselProgramasDesktop ul {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    gap: 5px;
+}
+
+#carouselProgramasDesktop li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+#carouselProgramasDesktop ul {
+    display: grid;
+    grid-template-columns: var(--grid-template);
+    gap: 20px 15px;
+}
+
+#carouselProgramasDesktop #sistema16 li {
+    border-radius: 0;
+    height: var(--card-height);
+}
+
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 15px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    width: 220px;
+}
+
+.logo {
+    height: 6vh;
+}
+
+.card {
+    background-image: url("../../assets/caixas dagua azul.jpg");
+    position: relative;
+    width: var(--card-width);
+    height: var(--card-height);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15%;
+    cursor: pointer;
+    color: white;
+}
+
+.card::before,
+.card::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--yellow-color);
+    transition: all 0.5s;
+    color: black;
+}
+
+.card::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.card:hover:after {
+    transition: all 0.5s;
+    font-weight: normal;
+    content: "";
+}
+
+.card-text {
+    opacity: 0;
+    transition: opacity 0.5s ease 0.1s; /* Ajuste o delay conforme necessário */
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: bold;
+}
+
+.card:hover .card-text {
+    opacity: 1;
+    z-index: 1;
+    text-align: center;
+    color: #181c32;
+}
+
