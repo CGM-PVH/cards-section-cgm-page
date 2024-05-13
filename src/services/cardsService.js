@@ -96,7 +96,7 @@ const cardsData = {
             alt:''
         },
         description: 'Processo Administrativo de Responsabilização',
-        linkURL: 'https://par-table.streamlit.app/'
+        linkURL: 'https://transparencia.portovelho.ro.gov.br/PAR'
     },
     "avaliacaoSistemaControleinterno": {
         title: 'AVALIAÇÃO SISTEMA DE CONTROLE INTERNO',
