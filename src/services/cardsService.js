@@ -116,6 +116,24 @@ const cardsData = {
         description: 'Modelo de Capacidade de Auditoria Interna',
         linkURL: 'https://cgm.portovelho.ro.gov.br/arquivos/lista/61587/ia-cm'
     },
+    "cadeiaValor": {
+        title: 'Cadeia de Valor',
+        logo: {
+            url:'',
+            alt:''
+        },
+        description: 'Cadeia de Valor por setor/categoria',
+        linkURL: 'https://cadeia-de-valor.netlify.app/'
+    },
+    "pesquisaRelatorios": {
+        title: 'Pesquisa de Relatórios',
+        logo: {
+            url:'',
+            alt:''
+        },
+        description: 'A Pesquisa de Relatórios tem o objetivo de reunir em um único espaço todos os trabalhos da CGM',
+        linkURL: '#'
+    },
 }
 
 export default cardsData;
