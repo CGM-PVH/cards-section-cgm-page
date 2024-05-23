@@ -81,7 +81,7 @@ const cardsData = {
         linkURL: 'https://cgm.portovelho.ro.gov.br/arquivos/lista/31984?lei-complementar'
     },
     "orientacoesCovid19": {
-        title: 'ORIENTAÇÕES COVID-19',
+        title: 'ORIENTAÇÕES <br> COVID-19',
         logo: {
             url:'',
             alt:''
@@ -104,7 +104,7 @@ const cardsData = {
             url:'',
             alt:''
         },
-        description: 'Resultados de avaliação do Sistema de Controle Internoaplicados no exercícios de 2021 a 2023',
+        description: 'Relatório de avaliação do Sistema de Controle Interno 2021/2023',
         linkURL: 'https://graficos-cgm.netlify.app/main'
     },
     "IACM": {
@@ -117,7 +117,7 @@ const cardsData = {
         linkURL: 'https://cgm.portovelho.ro.gov.br/arquivos/lista/61587/ia-cm'
     },
     "cadeiaValor": {
-        title: 'Cadeia de Valor',
+        title: 'CADEIA DE VALOR',
         logo: {
             url:'',
             alt:''
@@ -125,14 +125,16 @@ const cardsData = {
         description: 'Cadeia de Valor por setor/categoria',
         linkURL: 'https://cadeia-de-valor.netlify.app/'
     },
-    "pesquisaRelatorios": {
-        title: 'Pesquisa de Relatórios',
+    "ManualConduta": {
+        title: 'MANUAL DE CONDUTA PARA AGENTES PÚBLICOS',
         logo: {
             url:'',
             alt:''
         },
-        description: 'A Pesquisa de Relatórios tem o objetivo de reunir em um único espaço todos os trabalhos da CGM',
-        linkURL: '#'
+        description: 'Condutas éticas\n' +
+            'para servidores públicos de Porto velho, durante o período\n' +
+            'eleitoral',
+        linkURL: 'https://cgm.portovelho.ro.gov.br/uploads/editor/files/Manual%20de%20Conduta%20Agentes%20P%C3%BAblicos%20att.pdf'
     },
 }
 
