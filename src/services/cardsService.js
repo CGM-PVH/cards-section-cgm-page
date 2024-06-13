@@ -69,7 +69,7 @@ const cardsData = {
             alt:''
         },
         description: 'Todas as portarias da CGM por ano',
-        linkURL: 'https://cgm.portovelho.ro.gov.br/arquivos/lista/25692/cgm'
+        linkURL: 'https://transparencia.portovelho.ro.gov.br/arquivos/lista/25692/'
     },
     "leisComplementares": {
         title: 'LEIS COMPLEMENTARES',
@@ -116,15 +116,15 @@ const cardsData = {
         description: 'Modelo de Capacidade de Auditoria Interna',
         linkURL: 'https://cgm.portovelho.ro.gov.br/arquivos/lista/61587/ia-cm'
     },
-    "cadeiaValor": {
-        title: 'CADEIA DE VALOR',
-        logo: {
-            url:'',
-            alt:''
-        },
-        description: 'Cadeia de Valor por setor/categoria',
-        linkURL: 'https://cadeia-de-valor.netlify.app/'
-    },
+    // "cadeiaValor": {
+    //     title: 'CADEIA DE VALOR',
+    //     logo: {
+    //         url:'',
+    //         alt:''
+    //     },
+    //     description: 'Cadeia de Valor por setor/categoria',
+    //     linkURL: 'https://cadeia-de-valor.netlify.app/'
+    // },
     "ManualConduta": {
         title: 'MANUAL DE CONDUTA PARA AGENTES PÚBLICOS',
         logo: {
